@@ -1,0 +1,139 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+.container {
+  height: 150px;
+  width: 150px;
+  margin: 70px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa {
+  font-size: 100px;
+  justify-content: center;
+}
+
+.fore {
+  margin-top: -5px;
+  z-index: 3;
+}
+
+.shade {
+  filter: blur(6px);
+  color: yellow;
+  z-index: 2;
+  animation: col 3s infinite backwards alternate;
+}
+
+.back {
+  color: white;
+}
+
+.pos {
+  position: absolute;
+}
+
+.nada {
+  background: rgb(179, 179, 179);
+  width: 13px;
+  height: 13px;
+  box-shadow: inset 0px 0px 10px 0px;
+  border-radius: 100%;
+  animation: pads 5s infinite backwards alternate;
+}
+
+@keyframes pads {
+  0% {
+    padding: 0px;
+  }
+
+  5% {
+    padding: 30px;
+  }
+
+  10% {
+    padding: 50px;
+  }
+
+  20% {
+    padding: 40px;
+  }
+
+  30% {
+    padding: 80px;
+  }
+
+  40% {
+    padding: 60px;
+  }
+
+  50% {
+    padding: 90px;
+  }
+
+  60% {
+    padding: 30px;
+  }
+
+  70% {
+    padding: 60px;
+  }
+
+  80% {
+    padding: 10px;
+  }
+
+  90% {
+    padding: 100px;
+  }
+
+  100% {
+    padding: 0px;
+  }
+}
+
+@keyframes col {
+  0% {
+    color: violet;
+  }
+  10% {
+    color: indigo;
+  }
+
+  20% {
+    color: blue;
+  }
+
+  30% {
+    color: green;
+  }
+
+  40% {
+    color: yellow;
+  }
+
+  50% {
+    color: orange;
+  }
+
+  60% {
+    color: red;
+  }
+
+  70% {
+    color: purple;
+  }
+
+  80% {
+    color: black;
+  }
+
+  90% {
+    color: indianred;
+  }
+
+  100% {
+    color: tomato;
+  }
+}

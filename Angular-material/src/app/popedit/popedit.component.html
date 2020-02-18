@@ -1,0 +1,37 @@
+<i class="fa fa-times float-right mr-4" aria-hidden="true" (click)='close()'></i>
+<h1 class="primary">Registration</h1>
+
+<hr>
+<div class="form">
+  <form action="" class="example-form" [formGroup]="data" (ngSubmit)="edit()">
+    <mat-form-field appearance="outline">
+      <mat-label>Username</mat-label>
+      <input matInput placeholder="Username" formControlName='username'>
+      <mat-icon matSuffix></mat-icon>
+      <mat-hint>Your Sweet Name</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Gmail</mat-label>
+      <input matInput placeholder="Placeholder" formControlName='email'>
+      <mat-icon matSuffix></mat-icon>
+      <mat-hint>youremail@gmail.com</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Phone Number</mat-label>
+      <input type="number" matInput placeholder="Phone Number" formControlName='phone'>
+      <mat-icon matSuffix></mat-icon>
+      <mat-hint>10-Digit Number</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" [type]="hide ? 'password' : 'text'" placeholder="Enter password"
+        formControlName='password'>
+      <mat-hint>Enter a secure password</mat-hint>
+    </mat-form-field>
+
+    <button mat-raised-button color="accent" class="m-auto">register</button>
+  </form>
+</div>

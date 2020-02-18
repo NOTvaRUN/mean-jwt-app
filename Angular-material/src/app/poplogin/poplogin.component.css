@@ -1,0 +1,8 @@
+.m-auto {
+  display: flex;
+  padding: 2px 67px;
+}
+
+.mat-form-field {
+  margin: 10px;
+}

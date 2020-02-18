@@ -1,0 +1,8 @@
+.border-bottom {
+  background: linear-gradient(to right, red, yellow, white);
+  height: 5px;
+}
+
+.bull {
+  background: red;
+}

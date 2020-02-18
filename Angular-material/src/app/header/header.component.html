@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+  <a class="navbar-brand" href="#">NOTvaRUN</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="">Home</a>
+      </li>
+
+
+    </ul>
+    <div class="form-inline my-2 my-lg-0" layout-margin>
+      <button class="ui inverted primary button" *ngIf='!reg.loggedIn()' (click)='login()'>Login</button>
+      <button class="ui inverted orange button" *ngIf='!reg.loggedIn()' (click)="register()">Register</button>
+      <button mat-raised-button color="primary" *ngIf='reg.loggedIn()' routerLink='/crud'>Primary</button>
+      <button class="ui inverted red button" *ngIf='reg.loggedIn()' (click)='reg.logoutUser()'>LogOut</button>
+
+    </div>
+
+  </div>
+</nav>
+<div class="border-bottom"></div>
