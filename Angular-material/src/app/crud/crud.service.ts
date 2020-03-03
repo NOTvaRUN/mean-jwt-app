@@ -18,7 +18,7 @@ export class CrudService {
   delete(data) {
     return this.http.delete<any>(`${this.baseurl}/delete/${data}`);
   }
-  upsy(id, data) {
-    return this.http.put<any>(`${this.baseurl}/update/${id}`, data);
+  upsy(data) {
+    return this.http.put<any>(`${this.baseurl}/update/`, data);
   }
 }

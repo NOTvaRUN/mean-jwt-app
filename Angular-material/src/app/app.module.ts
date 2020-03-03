@@ -19,6 +19,7 @@ import { PoploginComponent } from "./poplogin/poplogin.component";
 import { CrudComponent } from './crud/crud.component';
 import { PopaddComponent } from './popadd/popadd.component';
 import { PopeditComponent } from './popedit/popedit.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PopeditComponent } from './popedit/popedit.component';
     PoploginComponent,
     CrudComponent,
     PopaddComponent,
-    PopeditComponent
+    PopeditComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

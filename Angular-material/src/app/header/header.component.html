@@ -14,6 +14,7 @@
 
     </ul>
     <div class="form-inline my-2 my-lg-0" layout-margin>
+      <button class="ui inverted primary button" routerLink='/post'>post</button>
       <button class="ui inverted primary button" *ngIf='!reg.loggedIn()' (click)='login()'>Login</button>
       <button class="ui inverted orange button" *ngIf='!reg.loggedIn()' (click)="register()">Register</button>
       <button mat-raised-button color="primary" *ngIf='reg.loggedIn()' routerLink='/crud'>Primary</button>

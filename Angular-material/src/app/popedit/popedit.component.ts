@@ -45,15 +45,6 @@ export class PopeditComponent implements OnInit {
     });
   }
 
-  edit() {
-    this.crud.upsy(id, this.data.value).subscribe(
-      res => {
-        this.router.navigate(["/crud"]);
-        this.dialogRef.close();
-      },
-      err => console.log(err)
-    );
-  }
   close() {
     this.dialogRef.close();
   }

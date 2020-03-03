@@ -8,12 +8,14 @@ import { HomeComponent } from "./home/home.component";
 import { MainComponent } from "./main/main.component";
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
+import { PostComponent } from "./post/post.component";
 
 const routes: Routes = [
   { path: "", component: MainComponent },
   { path: "home", canActivate: [AuthguardService], component: HomeComponent },
   { path: "poplogin", component: PoploginComponent },
   { path: "popregister", component: PopregisterComponent },
+  { path: "post", component: PostComponent },
   { path: "crud", canActivate: [AuthguardService], component: CrudComponent },
   {
     path: "popadd",

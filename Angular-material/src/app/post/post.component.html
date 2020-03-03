@@ -1,0 +1,9 @@
+<div class="container">
+  <form action="" #form='ngForm' (ngSubmit)='post(form.value)'>
+    <input type="text" ngModel #name name="name" id="name">
+    <input type="text" ngModel #age name="age" id="age">
+    <input type="text" ngModel #designation name="designation" id="designation">
+    <button class="btn btn-primary">submit</button>
+
+  </form>
+</div>
